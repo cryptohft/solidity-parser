@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import quantstamp.solidity.lang.Lexer;
+import quantstamp.solidity.lang.Parser;
 
 public class Driver {
 
@@ -21,6 +22,12 @@ public class Driver {
       System.out.println("identifier  : " + lex.eatIdentifier());
       System.out.println("left curly  : " + lex.eatLeftCurlyBrace());
       System.out.println("right curly : " + lex.eatRightCurlyBrace());
+
+      // Use the parser
+      final Parser parser = new SimpleParser(input);
+      final SyntaxTree tree = parser.parse();
+
+      System.out.println(tree);
 
     } catch (IOException e) {
       e.printStackTrace();
