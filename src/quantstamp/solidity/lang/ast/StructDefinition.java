@@ -5,7 +5,7 @@ import java.util.List;
 // StructDefinition = 'struct' Identifier '{'
 // ( VariableDeclaration ';' (VariableDeclaration ';')* )? '}'
 
-public class StructDefinition extends Node {
+public final class StructDefinition extends Node {
   public final Identifier identifier;
   public final List<VariableDeclaration> varDecls;
 

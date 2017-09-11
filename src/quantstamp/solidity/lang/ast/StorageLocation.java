@@ -2,7 +2,7 @@ package quantstamp.solidity.lang.ast;
 
 // StorageLocation = 'memory' | 'storage'
 
-public class StorageLocation extends Node {
+public final class StorageLocation extends Node {
 
   public static enum StorageLocationType {
     MEMORY, STORAGE

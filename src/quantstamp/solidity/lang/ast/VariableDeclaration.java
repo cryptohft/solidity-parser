@@ -2,7 +2,7 @@ package quantstamp.solidity.lang.ast;
 
 // VariableDeclaration = TypeName StorageLocation? Identifier
 
-public class VariableDeclaration extends Node {
+public final class VariableDeclaration extends Node {
   public final TypeName typeName;
   public final StorageLocation storageLocation;
   public final Identifier identifier;

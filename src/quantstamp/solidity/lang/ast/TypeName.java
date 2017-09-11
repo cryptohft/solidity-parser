@@ -6,7 +6,7 @@ package quantstamp.solidity.lang.ast;
 // | ArrayTypeName
 // | FunctionTypeName
 
-public class TypeName extends Node {
+public final class TypeName extends Node {
   public final UserDefinedTypeName userDefinedTypeName;
   public final Mapping mapping;
   public final ArrayTypeName arrayTypeName;
